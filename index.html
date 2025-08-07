@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XL Simposio de Profesores Universitarios de Contabilidad Pública</title>
+  <meta name="description" content="Sitio oficial del XL Simposio Nacional de Profesores Universitarios de Contabilidad Pública - 3, 4 y 5 de septiembre de 2025 - San Miguel de Tucumán." />
+  
+  <!-- Social Media Meta Tags -->
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://simposio-contabilidad-publica.unt.edu.ar/" />
+  <meta property="og:title" content="XL Simposio de Profesores Universitarios de Contabilidad Pública" />
+  <meta property="og:description" content="Sitio oficial del XL Simposio Nacional de Profesores Universitarios de Contabilidad Pública - 3, 4 y 5 de septiembre de 2025 - San Miguel de Tucumán." />
+  <meta property="og:image" content="imagenes/social-tag-img.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="XL Simposio CP" />
+  <meta property="og:locale" content="es_AR" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://simposio-contabilidad-publica.unt.edu.ar/" />
+  <meta property="twitter:title" content="XL Simposio de Profesores Universitarios de Contabilidad Pública" />
+  <meta property="twitter:description" content="Sitio oficial del XL Simposio Nacional de Profesores Universitarios de Contabilidad Pública - 3, 4 y 5 de septiembre de 2025 - San Miguel de Tucumán." />
+  <meta property="twitter:image" content="imagenes/social-tag-img.jpg" />
+  
+  <!-- LinkedIn -->
+  <meta property="og:image:alt" content="XL Simposio Nacional de Profesores Universitarios de Contabilidad Pública - San Miguel de Tucumán 2025" />
+  
+  <!-- Additional Meta Tags -->
+  <meta name="keywords" content="simposio, contabilidad pública, profesores universitarios, Tucumán, UNT, FCE, 2025" />
+  <meta name="author" content="Facultad de Ciencias Económicas - Universidad Nacional de Tucumán" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://simposio-contabilidad-publica.unt.edu.ar/" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#0d6efd;
+      --brand-2:#6610f2;
+    }
+    *{font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;}
+    .hero{
+      position:relative;
+      padding: 6rem 0 5rem;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(13,110,253,.08), transparent),
+                  radial-gradient(1200px 600px at 90% 10%, rgba(102,16,242,.07), transparent);
+    }
+         .hero::after{
+       content:""; position:absolute; inset:0; background:url('imagenes/fondo.jpg') center/cover no-repeat; opacity:0.4; pointer-events:none;
+     }
+    .hero .container{position:relative; z-index:2}
+    .badge-soft{background:rgba(13,110,253,.1); color:#0d6efd; border:1px solid rgba(13,110,253,.2)}
+    .shadow-soft{box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    .section{padding:4.5rem 0}
+    .section-title{font-weight:800}
+    .timeline .time{width:7rem}
+    .hotel-card small{opacity:.8}
+    .footer-link{color:inherit; text-decoration:none}
+    .footer-link:hover{text-decoration:underline}
+    .carousel .carousel-item img{
+      object-fit: cover;
+      height: 400px;
+    }
+    .carousel-indicators{
+      bottom: 10px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next{
+      width: 10%;
+    }
+    #btnVolverArriba {
+      transition: all 0.3s ease;
+      opacity: 0.8;
+    }
+    #btnVolverArriba:hover {
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+    .bg-gradient-primary {
+      background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    }
+    .bg-gradient-success {
+      background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+    }
+    .bg-gradient-warning {
+      background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    }
+    .bg-gradient-info {
+      background: linear-gradient(135deg, #0dcaf0 0%, #0aa2c0 100%);
+    }
+         .z-1 {
+       z-index: 1;
+     }
+     /* Estilos mejorados para el navbar */
+     .navbar {
+       backdrop-filter: blur(10px);
+       background: rgba(255, 255, 255, 0.95) !important;
+       box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+       transition: all 0.3s ease;
+     }
+     .navbar-brand {
+       transition: transform 0.3s ease;
+     }
+     .navbar-brand:hover {
+       transform: scale(1.05);
+     }
+     .navbar-nav .nav-link {
+       position: relative;
+       font-weight: 500;
+       padding: 0.75rem 1.25rem !important;
+       margin: 0 0.25rem;
+       border-radius: 8px;
+       transition: all 0.3s ease;
+     }
+     .navbar-nav .nav-link:hover {
+       background: linear-gradient(135deg, rgba(13,110,253,.1) 0%, rgba(102,16,242,.1) 100%);
+       color: #0d6efd !important;
+       transform: translateY(-2px);
+     }
+     .navbar-nav .nav-link::after {
+       content: '';
+       position: absolute;
+       bottom: 0;
+       left: 50%;
+       width: 0;
+       height: 2px;
+       background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+       transition: all 0.3s ease;
+       transform: translateX(-50%);
+     }
+     .navbar-nav .nav-link:hover::after {
+       width: 80%;
+     }
+     .navbar-toggler {
+       border: none;
+       padding: 0.5rem;
+       border-radius: 8px;
+       transition: all 0.3s ease;
+     }
+     .navbar-toggler:hover {
+       background: rgba(13,110,253,.1);
+     }
+     .navbar-toggler:focus {
+       box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+     }
+     
+     /* Solución para desbordamiento horizontal en móviles */
+     @media (max-width: 768px) {
+       .hero .badge {
+         font-size: 0.75rem;
+         padding: 0.5rem 0.5rem;
+         white-space: normal;
+         line-height: 1.4;
+         max-width: 100%;
+         word-wrap: break-word;
+       }
+       .hero h1 {
+         font-size: 1.75rem;
+         line-height: 1.3;
+       }
+       .hero .lead {
+         font-size: 1rem;
+       }
+       .container {
+         padding-left: 15px;
+         padding-right: 15px;
+       }
+     }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top py-3">
+    <div class="container">
+             <a class="navbar-brand d-flex align-items-center" href="#inicio">
+         <img src="imagenes/logo.png" alt="Logo XL Simposio" height="80" class="me-2 d-none d-lg-block">
+         <img src="imagenes/logo.png" alt="Logo XL Simposio" height="50" class="me-2 d-lg-none">
+       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#programa">Programa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#inscripcion">Inscripción</a></li>
+          <li class="nav-item"><a class="nav-link" href="#trabajos">Trabajos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#temario">Temario</a></li>
+          <li class="nav-item"><a class="nav-link" href="#documentos">Circulares</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sede">Sede</a></li>
+          <li class="nav-item"><a class="nav-link" href="#alojamiento">Alojamiento</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="badge badge-soft rounded-pill mb-3">3–5 de septiembre de 2025 · San Miguel de Tucumán · Modalidad híbrida</span>
+          <h1 class="display-5 fw-bold mb-3">XL Simposio Nacional de Profesores Universitarios de Contabilidad Pública</h1>
+          <p class="lead mb-4">“La enseñanza es más que impartir conocimiento, es inspirar el cambio hacia un mejor futuro”.</p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#inscripcion" class="btn btn-primary btn-lg">Inscribirme</a>
+            <a href="#programa" class="btn btn-outline-primary btn-lg">Ver programa</a>
+            <a href="#documentos" class="btn btn-link">Descargar circulares</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div id="heroCarousel" class="carousel slide rounded-4 shadow-soft" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/profesores-universitarios.jpg" class="d-block w-100 rounded-4" alt="Profesores universitarios de contabilidad pública">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/comite-organizador.jpg" class="d-block w-100 rounded-4" alt="Comite organizador">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/inscripcion.jpg" class="d-block w-100 rounded-4" alt="Inscripción">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- DATOS RÁPIDOS -->
+  <section class="section bg-light border-top">
+    <div class="container">
+      <div class="row g-4 text-center">
+                 <div class="col-6 col-lg-3">
+           <div class="p-4 bg-gradient-primary text-white rounded-4 shadow-soft h-100 text-center">
+             <div class="mb-3">
+               <i class="bi bi-calendar-event display-4"></i>
+             </div>
+             <div class="fw-bold mb-2">Fechas</div>
+             <div class="fs-6">3, 4 y 5 de sept. 2025</div>
+           </div>
+         </div>
+         <div class="col-6 col-lg-3">
+           <div class="p-4 bg-gradient-success text-white rounded-4 shadow-soft h-100 text-center">
+             <div class="mb-3">
+               <i class="bi bi-building display-4"></i>
+             </div>
+             <div class="fw-bold mb-2">Sede</div>
+             <div class="fs-6">FACE · Universidad Nacional de Tucumán</div>
+           </div>
+         </div>
+         <div class="col-6 col-lg-3">
+           <div class="p-4 bg-gradient-warning text-white rounded-4 shadow-soft h-100 text-center">
+             <div class="mb-3">
+               <i class="bi bi-geo-alt display-4"></i>
+             </div>
+             <div class="fw-bold mb-2">Ubicación</div>
+             <div class="fs-6">Av. Independencia 1900, SMT</div>
+           </div>
+         </div>
+         <div class="col-6 col-lg-3">
+           <div class="p-4 bg-gradient-info text-white rounded-4 shadow-soft h-100 text-center">
+             <div class="mb-3">
+               <i class="bi bi-laptop display-4"></i>
+             </div>
+             <div class="fw-bold mb-2">Modalidad</div>
+             <div class="fs-6">Presencial + Virtual</div>
+           </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMA -->
+  <section id="programa" class="section">
+    <div class="container">
+      <div class="row align-items-start g-5">
+        <div class="col-lg-6">
+          <h2 class="section-title mb-3">Programa Tentativo</h2>
+          <p class="text-muted">El cronograma puede ajustarse según cantidad de trabajos y actividades confirmadas.</p>
+          <div class="list-group shadow-soft">
+            <div class="list-group-item py-4">
+              <h6 class="mb-1">Miércoles 3/9</h6>
+              <ul class="mb-0">
+                <li>16:00 · Acreditaciones</li>
+                <li>17:00 · Apertura institucional</li>
+                <li>18:00 · Exposición de trabajos</li>
+                <li>19:00 · Lunch de bienvenida</li>
+                <li>20:00 · Fin de la jornada</li>
+              </ul>
+            </div>
+            <div class="list-group-item py-4">
+              <h6 class="mb-1">Jueves 4/9</h6>
+              <ul class="mb-0">
+                <li>09:30 · Exposición de trabajos</li>
+                <li>11:00 · Coffee break</li>
+                <li>11:30 · Exposición de trabajos y conferencias</li>
+                <li>13:00 · Almuerzo</li>
+                <li>15:00 · Exposición de trabajos y conferencias</li>
+                <li>16:30 · Coffee break</li>
+                <li>17:00 · Exposición de trabajos</li>
+                <li>18:30 · Fin de la jornada</li>
+                <li>20:00 · Cena de camaradería (Casa Histórica)</li>
+              </ul>
+            </div>
+            <div class="list-group-item py-4">
+              <h6 class="mb-1">Viernes 5/9</h6>
+              <ul class="mb-0">
+                <li>09:30 · Exposición de trabajos</li>
+                <li>11:00 · Coffee break</li>
+                <li>11:30 · Exposición de trabajos y conferencias</li>
+                <li>13:00 · Almuerzo</li>
+                <li>16:00 · Acto de cierre y entrega de certificados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded-4 shadow-soft" src="imagenes/simposio.jpg" alt="Simposio" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSCRIPCION -->
+  <section id="inscripcion" class="section bg-light border-top">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-7">
+          <h2 class="section-title mb-3">Inscripción</h2>
+          <ul class="list-unstyled lead">
+            <li><strong>Asociados (cuota al día):</strong> $90.000</li>
+            <li><strong>No asociados / asociados con cuota no al día:</strong> $125.000</li>
+            <li><strong>Acompañantes:</strong> 50% del valor final de inscripción</li>
+            <li><strong>Participación virtual:</strong> 50% del valor según condición</li>
+          </ul>
+          <div class="alert alert-primary" role="alert">
+            <strong>Preinscripción:</strong> envío de ficha + pago a cuenta del 50% (hasta el 15/08/2025).
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary btn-lg" href="https://asociacioncooperadoraface.mitiendanube.com/productos/preinscripcion-xl-simposio-nacional-de-profesores-universitarios-de-contabilidad-publica/" target="_blank" rel="noopener">Pagar preinscripción</a>
+            <a class="btn btn-outline-primary btn-lg" href="mailto:simposiotuc@face.unt.edu.ar?subject=Ficha%20de%20inscripci%C3%B3n%20-%20XL%20Simposio">Enviar ficha por correo</a>
+          </div>
+          <p class="mt-3 mb-0 text-muted">Tras realizar la preinscripción, enviar comprobante a <a href="mailto:simposiotuc@face.unt.edu.ar">simposiotuc@face.unt.edu.ar</a> indicando Apellido y Nombre.</p>
+        </div>
+        <div class="col-lg-5">
+          <div class="p-4 bg-white rounded-4 shadow-soft">
+            <h5 class="fw-bold mb-3">Incluye</h5>
+            <ul class="mb-0">
+              <li>Material del Simposio</li>
+              <li>2 almuerzos</li>
+              <li>Coffee breaks</li>
+              <li>Cena de camaradería</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRABAJOS -->
+  <section id="trabajos" class="section">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <h2 class="section-title mb-3">Presentación de Trabajos</h2>
+          <ul class="lead">
+            <li><strong>Fecha límite de envío:</strong> 29/08/2025</li>
+            <li><strong>Formato:</strong> Word (.doc o .docx); A4; márgenes izq./der. 3 cm, sup./inf. 2,5 cm; letra Arial 12; interlineado sencillo; máx. 40 páginas.</li>
+            <li><strong>Estructura:</strong> Índice; Resumen ejecutivo (máx. 4 páginas); Cuerpo; Conclusiones (máx. 1 página); Bibliografía.</li>
+            <li><strong>Carátula:</strong> Nombre del Simposio; Título; Autor/es; Universidad y Facultad; Cargo docente; Año.</li>
+          </ul>
+          <p class="mb-3">Enviar por correo con asunto <em>"PRESENTACION DE TRABAJO"</em>, indicando en el cuerpo Apellido y Nombre de autor/es y Título del trabajo. Esperar confirmación de recibo.</p>
+          <a class="btn btn-outline-primary" href="mailto:simposiotuc@face.unt.edu.ar?subject=Presentaci%C3%B3n%20de%20trabajo%20-%20XL%20Simposio">Enviar trabajo</a>
+        </div>
+        <div class="col-lg-5">
+          <img class="img-fluid rounded-4 shadow-soft" src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?q=80&w=1200&auto=format&fit=crop" alt="Trabajo académico" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMARIO -->
+  <section id="temario" class="section bg-light border-top">
+    <div class="container">
+      <h2 class="section-title mb-4">Temario</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold">Enseñanza de la asignatura</h5>
+            <ul class="mb-0">
+              <li>Factores que inciden en la enseñanza</li>
+              <li>Cambios normativos y sus implicancias</li>
+              <li>Vínculo teórico-práctico y experiencias didácticas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold">Hacienda Pública</h5>
+            <ul class="mb-0">
+              <li>Organización y estructura (macro y micro)</li>
+              <li>Impacto de modificaciones normativas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold">Institucionalidad, Presupuesto y Control</h5>
+            <ul class="mb-0">
+              <li>Sistema presupuestario y prórrogas</li>
+              <li>Planificación, gestión y adm. financiera</li>
+              <li>Resultados, indicadores y responsabilidad</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold">Tecnologías en el Sector Público</h5>
+            <ul class="mb-0">
+              <li>IA: tendencias, experiencias, ventajas y límites</li>
+              <li>IA en el control de las cuentas públicas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold">Universidades Nacionales</h5>
+            <ul class="mb-0">
+              <li>Presupuesto y financiamiento</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+         <!-- DOCUMENTOS -->
+     <section id="documentos" class="section">
+         <div class="container">
+           <div class="row g-5">
+             <div class="col-12 text-center mb-4">
+               <h2 class="section-title mb-3">Circulares y Documentos</h2>
+               <p class="lead text-muted">Descargá la información oficial del Simposio</p>
+             </div>
+             <div class="col-lg-4">
+               <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center position-relative overflow-hidden">
+
+                 <div class="mb-3">
+                   <i class="bi bi-file-earmark-pdf text-danger display-4"></i>
+                 </div>
+                 <h5 class="fw-bold mb-2">Circular Nº 1</h5>
+                 
+                 <div class="d-grid">
+                   <a class="btn btn-outline-danger" href="circulares/Circular 1 Simposio XL Tucumán.pdf" download target="_blank">
+                     <i class="bi bi-download me-2"></i>Descargar PDF
+                   </a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-lg-4">
+               <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center position-relative overflow-hidden">
+
+                 <div class="mb-3">
+                   <i class="bi bi-file-earmark-pdf text-warning display-4"></i>
+                 </div>
+                 <h5 class="fw-bold mb-2">Circular Nº 2</h5>
+                 
+                 <div class="d-grid">
+                   <a class="btn btn-outline-warning" href="circulares/Circular 2 Simposio XL Tucumán.pdf" download target="_blank">
+                     <i class="bi bi-download me-2"></i>Descargar PDF
+                   </a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-lg-4">
+               <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center position-relative overflow-hidden">
+
+                 <div class="mb-3">
+                   <i class="bi bi-file-earmark-pdf text-info display-4"></i>
+                 </div>
+                 <h5 class="fw-bold mb-2">Circular Nº 3</h5>
+                 
+                 <div class="d-grid">
+                   <a class="btn btn-outline-info" href="circulares/Circular 3 Simposio XL Tucumán.pdf" download target="_blank">
+                     <i class="bi bi-download me-2"></i>Descargar PDF
+                   </a>
+                 </div>
+               </div>
+             </div>
+           </div>
+           
+
+         </div>
+       </section>
+
+     <!-- SEDE -->
+   <section id="sede" class="section" style="background: linear-gradient(135deg, rgba(13,110,253,.03) 0%, rgba(102,16,242,.02) 100%);">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="section-title mb-3">Sede</h2>
+          <p class="lead">Facultad de Ciencias Económicas – Universidad Nacional de Tucumán (ex Quinta Agronómica).</p>
+          <ul class="list-unstyled">
+            <li><strong>Dirección:</strong> Av. Independencia 1900, San Miguel de Tucumán</li>
+            <li><strong>Ciudad:</strong> San Miguel de Tucumán, Provincia de Tucumán</li>
+          </ul>
+          <a class="btn btn-outline-primary" href="https://maps.google.com/?q=Av.+Independencia+1900,+San+Miguel+de+Tucum%C3%A1n" target="_blank" rel="noopener">Ver en Google Maps</a>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded-4 shadow-soft" src="imagenes/face.jpg" alt="Campus universitario" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALOJAMIENTO -->
+  <section id="alojamiento" class="section bg-light border-top">
+    <div class="container">
+      <h2 class="section-title mb-4">Alojamiento con descuento</h2>
+      <div class="row g-4">
+        <!-- Cada tarjeta puede ajustarse según disponibilidad -->
+        <div class="col-md-6 col-lg-4">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold mb-1">Amerian Tucumán</h5>
+            <small class="d-block mb-2">Santiago del Estero 425 · +54 381 431-9441</small>
+            <ul class="mb-2">
+              <li>Single/Doble: $120.552</li>
+              <li>Suite Ejecutiva: $145.859,90</li>
+            </ul>
+            <small>Tarifa con desayuno. Sujeto a disponibilidad.</small>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold mb-1">Hotel Premier</h5>
+            <small class="d-block mb-2">Crisóstomo Álvarez 510 · +54 381 431-0382</small>
+            <ul class="mb-2"><li>Single: $58.320</li><li>Doble: $64.800</li></ul>
+            <small>Tarifa con desayuno.</small>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold mb-1">Hotel Carlos V</h5>
+            <small class="d-block mb-2">25 de Mayo 330 · +54 381 431-1666</small>
+            <ul class="mb-2"><li>Single: $63.000</li><li>Doble: $70.000</li></ul>
+            <small>Tarifa con desayuno.</small>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold mb-1">Bicentenario Suites & Spa</h5>
+            <small class="d-block mb-2">J. G. de las Heras 21 · 381 254-6282</small>
+            <ul class="mb-2"><li>Single: $90.800</li><li>Doble: $102.800</li></ul>
+            <small>Tarifa con desayuno.</small>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold mb-1">Hilton Garden Inn Tucumán</h5>
+            <small class="d-block mb-2">Miguel Lillo 365 · +54 381 453-2000</small>
+            <ul class="mb-2"><li>Single: $125.000</li><li>Doble: $140.000</li></ul>
+            <small>Tarifa con desayuno.</small>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold mb-1">Hotel Francia</h5>
+            <small class="d-block mb-2">J. C. Álvarez 467 · +54 381 431-0781</small>
+            <ul class="mb-2"><li>Single: $60.300</li><li>Doble: $73.700</li><li>Triple: $85.600</li><li>Cuádruple: $99.800</li></ul>
+            <small>Tarifa con desayuno.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section bg-light border-top">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-12 text-center mb-4">
+          <h2 class="section-title mb-3">Contacto</h2>
+          <p class="lead text-muted">Para consultas, inscripciones y envío de trabajos</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center">
+            <div class="mb-3">
+              <i class="bi bi-envelope-fill text-primary display-4"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Email Principal</h5>
+            <p class="mb-3">simposiotuc@face.unt.edu.ar</p>
+            <a href="mailto:simposiotuc@face.unt.edu.ar" class="btn btn-outline-primary">Enviar email</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center">
+            <div class="mb-3">
+              <i class="bi bi-telephone-fill text-success display-4"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Prof. Gabriela Sánchez</h5>
+            <p class="mb-3">+54 381 402-1625</p>
+            <a href="tel:+543814021625" class="btn btn-outline-success">Llamar</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center">
+            <div class="mb-3">
+              <i class="bi bi-telephone-fill text-info display-4"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Prof. Nora Liz Rabini</h5>
+            <p class="mb-3">+54 381 469-9718</p>
+            <a href="tel:+543814699718" class="btn btn-outline-info">Llamar</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div>
+        <span class="text-muted">© <span id="year"></span> XL Simposio Nacional de Profesores Universitarios de Contabilidad Pública</span>
+      </div>
+      <div class="small text-muted">Organiza: Cátedra de Administración y Contabilidad Pública · FCE-UNT · AAPUCP "Dr. Juan Bayetto"</div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="btnVolverArriba" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle shadow" style="width: 50px; height: 50px; z-index: 1000; display: none;">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Botón volver arriba
+    const btnVolverArriba = document.getElementById('btnVolverArriba');
+    
+    // Mostrar/ocultar botón según scroll
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        btnVolverArriba.style.display = 'block';
+      } else {
+        btnVolverArriba.style.display = 'none';
+      }
+    });
+    
+    // Scroll suave hacia arriba
+    btnVolverArriba.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>
