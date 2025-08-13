@@ -154,9 +154,93 @@
      .navbar-toggler:hover {
        background: rgba(13,110,253,.1);
      }
-     .navbar-toggler:focus {
-       box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
-     }
+         .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+    }
+    
+    /* Estilos para la sección de sponsors */
+    .sponsor-card {
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0,0,0,.05);
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    }
+    
+    .sponsor-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,.12);
+      border-color: rgba(13,110,253,.2);
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    }
+    
+    .sponsor-card img {
+      transition: all 0.3s ease;
+      filter: grayscale(20%);
+    }
+    
+    .sponsor-card:hover img {
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+    
+    /* Estilos para el badge único del hero */
+    .hero-badge-single .badge {
+      transition: all 0.4s ease;
+      border: 2px solid transparent;
+      letter-spacing: 0.5px;
+      font-size: 0.85rem !important;
+      background: linear-gradient(135deg, #0d6efd 0%, #6610f2 50%, #0dcaf0 100%) !important;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-badge-single .badge::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s ease;
+    }
+    
+    .hero-badge-single .badge:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(13,110,253,0.3);
+      border-color: rgba(255,255,255,0.4);
+    }
+    
+    .hero-badge-single .badge:hover::before {
+      left: 100%;
+    }
+    
+    .hero-badge-single .badge i {
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .hero-badge-single .badge:hover i {
+      transform: scale(1.2);
+    }
+    
+    .hero-badge-single .bi-dot {
+      opacity: 0.7;
+      font-size: 0.8rem;
+    }
+    
+    /* Responsive para el badge único del hero */
+    @media (max-width: 768px) {
+      .hero-badge-single .badge {
+        font-size: 0.8rem !important;
+        padding: 0.6rem 1.2rem !important;
+        text-align: center;
+        line-height: 1.4;
+      }
+      
+      .hero-badge-single .bi-dot {
+        display: none;
+      }
+    }
      
      /* Solución para desbordamiento horizontal en móviles */
      @media (max-width: 768px) {
@@ -254,9 +338,23 @@
   <!-- HERO -->
   <header id="inicio" class="hero">
     <div class="container">
+      <!-- Badge centrado arriba del contenido -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 text-center">
+          <span class="hero-badge-single">
+            <span class="badge bg-gradient-primary text-white px-4 py-2 rounded-pill shadow-soft fs-6">
+              <i class="bi bi-calendar-event me-2"></i>3–5 de septiembre de 2025
+              <i class="bi bi-dot mx-2"></i>
+              <i class="bi bi-geo-alt me-2"></i>San Miguel de Tucumán
+              <i class="bi bi-dot mx-2"></i>
+              <i class="bi bi-laptop me-2"></i>Modalidad híbrida
+            </span>
+          </span>
+        </div>
+      </div>
+      
       <div class="row align-items-center g-5">
         <div class="col-lg-7">
-          <span class="badge badge-soft rounded-pill mb-3">3–5 de septiembre de 2025 · San Miguel de Tucumán · Modalidad híbrida</span>
           <h1 class="display-5 fw-bold mb-3">XL Simposio Nacional de Profesores Universitarios de Contabilidad Pública</h1>
           <p class="lead mb-4">“La enseñanza es más que impartir conocimiento, es inspirar el cambio hacia un mejor futuro”.</p>
           <div class="d-flex gap-2 flex-wrap">
@@ -274,13 +372,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="imagenes/profesores-universitarios.jpg" class="d-block w-100 rounded-4" alt="Profesores universitarios de contabilidad pública">
+                <img src="imagenes/comite-organizador.jpg" class="d-block w-100 rounded-4" alt="Bienvenidos">
               </div>
               <div class="carousel-item">
-                <img src="imagenes/comite-organizador.jpg" class="d-block w-100 rounded-4" alt="Comite organizador">
+                <img src="imagenes/profesores-universitarios.jpg" class="d-block w-100 rounded-4" alt="Bienvenidos">
               </div>
               <div class="carousel-item">
-                <img src="imagenes/inscripcion.jpg" class="d-block w-100 rounded-4" alt="Inscripción">
+                <img src="imagenes/inscripcion.jpg" class="d-block w-100 rounded-4" alt="Bienvenidos">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
@@ -455,63 +553,56 @@
       </div>
       
       <div class="row g-4 justify-content-center">
-        <!-- Sponsor Platino - FACE -->
-        <div class="col-md-4 col-lg-3">
-          <div class="text-center">
+        <!-- Primera fila: sponsor_1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
             <div class="mb-3">
-              <img src="imagenes/sponsor_1_face.jpg" alt="Sponsor FACE" class="img-fluid rounded-3 shadow-soft" style="max-height: 120px; object-fit: contain;">
+              <img src="imagenes/sponsor_1_face.jpg" alt="Sponsor FACE" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
             </div>
-            <span class="badge bg-primary px-3 py-2 fw-bold">
-              <i class="bi bi-award-fill me-1"></i>PLATINO
-            </span>
+            <h5 class="fw-bold text-primary mb-2">Facultad de Ciencias Económicas</h5>
+            <p class="text-muted small mb-0">Universidad Nacional de Tucumán</p>
           </div>
         </div>
         
-        <!-- Sponsor Platino - UNT -->
-        <div class="col-md-4 col-lg-3">
-          <div class="text-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
             <div class="mb-3">
-              <img src="imagenes/sponsor_1_unt.jpg" alt="Sponsor UNT" class="img-fluid rounded-3 shadow-soft" style="max-height: 120px; object-fit: contain;">
+              <img src="imagenes/sponsor_1_unt.jpg" alt="Sponsor UNT" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
             </div>
-            <span class="badge bg-primary px-3 py-2 fw-bold">
-              <i class="bi bi-award-fill me-1"></i>PLATINO
-            </span>
+            <h5 class="fw-bold text-primary mb-2">Universidad Nacional de Tucumán</h5>
+            <p class="text-muted small mb-0">Institución organizadora</p>
           </div>
         </div>
         
-        <!-- Sponsor Oro - SMT -->
-        <div class="col-md-4 col-lg-3">
-          <div class="text-center">
+        <!-- Segunda fila: sponsor_2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
             <div class="mb-3">
-              <img src="imagenes/sponsor_2_smt.jpg" alt="Sponsor SMT" class="img-fluid rounded-3 shadow-soft" style="max-height: 120px; object-fit: contain;">
+              <img src="imagenes/sponsor_2_smt.jpg" alt="Sponsor SMT" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
             </div>
-            <span class="badge bg-warning text-dark px-3 py-2 fw-bold">
-              <i class="bi bi-award-fill me-1"></i>ORO
-            </span>
+            <h5 class="fw-bold text-success mb-2">SMT</h5>
+            <p class="text-muted small mb-0">Empresa patrocinadora</p>
           </div>
         </div>
         
-        <!-- Sponsor Plata - Cuidarte -->
-        <div class="col-md-4 col-lg-3">
-          <div class="text-center">
+        <!-- Tercera fila: sponsor_3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
             <div class="mb-3">
-              <img src="imagenes/sponsor_3_cuidarte.jpg" alt="Sponsor Cuidarte" class="img-fluid rounded-3 shadow-soft" style="max-height: 120px; object-fit: contain;">
+              <img src="imagenes/sponsor_3_cuidarte.jpg" alt="Sponsor Cuidarte" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
             </div>
-            <span class="badge bg-secondary px-3 py-2 fw-bold">
-              <i class="bi bi-award-fill me-1"></i>PLATA
-            </span>
+            <h5 class="fw-bold text-info mb-2">Cuidarte</h5>
+            <p class="text-muted small mb-0">Empresa patrocinadora</p>
           </div>
         </div>
         
-        <!-- Sponsor Plata - JMV -->
-        <div class="col-md-4 col-lg-3">
-          <div class="text-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
             <div class="mb-3">
-              <img src="imagenes/sponsor_3_jmv.jpg" alt="Sponsor JMV" class="img-fluid rounded-3 shadow-soft" style="max-height: 120px; object-fit: contain;">
+              <img src="imagenes/sponsor_3_jmv.jpg" alt="Sponsor JMV" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
             </div>
-            <span class="badge bg-secondary px-3 py-2 fw-bold">
-              <i class="bi bi-award-fill me-1"></i>PLATA
-            </span>
+            <h5 class="fw-bold text-info mb-2">JMV</h5>
+            <p class="text-muted small mb-0">Empresa patrocinadora</p>
           </div>
         </div>
       </div>
@@ -523,43 +614,47 @@
     <div class="container">
       <div class="row align-items-start g-5">
         <div class="col-lg-6">
-          <h2 class="section-title mb-3">Programa Tentativo</h2>
-          <p class="text-muted">El cronograma puede ajustarse según cantidad de trabajos y actividades confirmadas.</p>
+          <h2 class="section-title mb-3">Programa de Actividades (Tentativo)*</h2>
           <div class="list-group shadow-soft">
             <div class="list-group-item py-4">
-              <h6 class="mb-1">Miércoles 3/9</h6>
+              <h6 class="mb-3 fw-bold text-primary">Miércoles 03 de setiembre</h6>
               <ul class="mb-0">
-                <li>16:00 · Acreditaciones</li>
-                <li>17:00 · Apertura institucional</li>
-                <li>18:00 · Exposición de trabajos</li>
-                <li>19:00 · Lunch de bienvenida</li>
-                <li>20:00 · Fin de la jornada</li>
+                <li><strong>16.00 hs</strong> - Acreditaciones</li>
+                <li><strong>17.00 hs</strong> - Apertura del Simposio a cargo de las autoridades de la Asociación, de la Facultad de Ciencias Económicas y el Rector de la UNT.</li>
+                <li><strong>18.00 hs</strong> - Exposición de trabajos</li>
+                <li><strong>18:30 hs</strong> - Exposición de trabajos</li>
+                <li><strong>19:00 hs</strong> - Lunch de bienvenida</li>
+                <li><strong>20:00 hs</strong> - Fin de la jornada</li>
               </ul>
             </div>
             <div class="list-group-item py-4">
-              <h6 class="mb-1">Jueves 4/9</h6>
+              <h6 class="mb-3 fw-bold text-success">Jueves 04 de setiembre</h6>
               <ul class="mb-0">
-                <li>09:30 · Exposición de trabajos</li>
-                <li>11:00 · Coffee break</li>
-                <li>11:30 · Exposición de trabajos y conferencias</li>
-                <li>13:00 · Almuerzo</li>
-                <li>15:00 · Exposición de trabajos y conferencias</li>
-                <li>16:30 · Coffee break</li>
-                <li>17:00 · Exposición de trabajos</li>
-                <li>18:30 · Fin de la jornada</li>
-                <li>20:00 · Cena de camaradería (Casa Histórica)</li>
+                <li><strong>09.30 hs</strong> - Exposición de trabajos</li>
+                <li><strong>11.00 hs</strong> - Coffee break</li>
+                <li><strong>11.30 hs</strong> - Exposición de Trabajos. Conferencias</li>
+                <li><strong>13.00 hs</strong> - Receso - Almuerzo</li>
+                <li><strong>15.00 hs</strong> - Exposición de Trabajos. Conferencias</li>
+                <li><strong>16.30 hs</strong> - Coffee break</li>
+                <li><strong>17.00 hs</strong> - Mesa panel de rectores UBA -San Luis y Salta</li>
+                <li><strong>18.30 hs</strong> - Fin de la jornada</li>
+                <li><strong>20.00 hs</strong> - Cena de camaradería en Casa Histórica</li>
               </ul>
             </div>
             <div class="list-group-item py-4">
-              <h6 class="mb-1">Viernes 5/9</h6>
+              <h6 class="mb-3 fw-bold text-warning">Viernes 05 de setiembre</h6>
               <ul class="mb-0">
-                <li>09:30 · Exposición de trabajos</li>
-                <li>11:00 · Coffee break</li>
-                <li>11:30 · Exposición de trabajos y conferencias</li>
-                <li>13:00 · Almuerzo</li>
-                <li>16:00 · Acto de cierre y entrega de certificados</li>
+                <li><strong>09.30 hs</strong> - Exposición de trabajos</li>
+                <li><strong>11.00 hs</strong> - Coffee break</li>
+                <li><strong>11.30 hs</strong> - Exposición de Trabajos. Conferencias</li>
+                <li><strong>13.00 hs</strong> - Receso - Almuerzo en Horco Molle</li>
+                <li><strong>16.00 hs</strong> - ACTO DE CIERRE DEL XL SIMPOSIO NACIONAL Y ENTREGA DE CERTIFICADOS</li>
               </ul>
             </div>
+          </div>
+          <div class="alert alert-info mt-4" role="alert">
+            <i class="bi bi-info-circle me-2"></i>
+            <strong>Nota:</strong> El presente cronograma de actividades es tentativo. Puede modificarse según la cantidad de trabajos enviados y otras actividades no confirmadas a la fecha.
           </div>
         </div>
         <div class="col-lg-6">
