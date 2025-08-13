@@ -6,6 +6,15 @@ Sitio web oficial del **XL Simposio Nacional de Profesores Universitarios de Con
 
 El sitio web está diseñado para proporcionar información completa sobre el simposio, facilitar las inscripciones, mostrar el programa académico y mantener informados a todos los participantes sobre los detalles del evento.
 
+## 🌐 Enlaces del Proyecto
+
+El sitio web del simposio se encuentra disponible en los siguientes enlaces:
+
+- **GitHub Pages**: [https://josemarindelafuente.github.io/simposio-Contabilidad-Publica/](https://josemarindelafuente.github.io/simposio-Contabilidad-Publica/)
+- **Sitio Oficial FACE-UNT**: [https://face.unt.edu.ar/web/xl-simposio-apucp/](https://face.unt.edu.ar/web/xl-simposio-apucp/)
+
+Ambos enlaces proporcionan acceso al mismo sitio web, permitiendo a los usuarios acceder desde diferentes plataformas según su preferencia.
+
 ## 🌟 Características Principales
 
 ### ✨ Diseño y Experiencia de Usuario
