@@ -62,6 +62,15 @@
     .hotel-card small{opacity:.8}
     .footer-link{color:inherit; text-decoration:none}
     .footer-link:hover{text-decoration:underline}
+    /* Estilos para el footer mejorado */
+    .hover-white:hover {
+      color: white !important;
+      transition: color 0.3s ease;
+    }
+    .btn-outline-light:hover {
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
+    }
     .carousel .carousel-item img{
       object-fit: cover;
       height: 400px;
@@ -170,10 +179,53 @@
          padding-left: 15px;
          padding-right: 15px;
        }
+       
+       /* Estilos responsive para la barra de redes sociales */
+       .redes-sociales .col-6 {
+         width: 100%;
+         text-align: center !important;
+         margin-bottom: 0.5rem;
+       }
+       .redes-sociales .text-end {
+         text-align: center !important;
+       }
+       .redes-sociales .d-flex {
+         justify-content: center !important;
+       }
+       .redes-sociales .justify-content-end {
+         justify-content: center !important;
+       }
      }
   </style>
 </head>
 <body>
+  <!-- REDES SOCIALES -->
+  <div class="bg-light border-bottom py-2 redes-sociales">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <span class="text-muted small me-3">Síguenos en:</span>
+            <a href="https://www.instagram.com/simposiocontabilidadpublicatuc" target="_blank" class="text-decoration-none me-3" aria-label="Instagram FACE-UNT">
+              <i class="bi bi-instagram text-danger fs-5"></i>
+            </a>
+            <a href="https://www.facebook.com/xlsimposionacionalcontabilidadpublica" target="_blank" class="text-decoration-none" aria-label="Facebook FACE-UNT">
+              <i class="bi bi-facebook text-primary fs-5"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="d-flex align-items-center justify-content-end">
+            <span class="text-muted small me-2">Contacto:</span>
+            <a href="mailto:simposiotuc@face.unt.edu.ar" class="text-decoration-none text-muted small">
+              <i class="bi bi-envelope me-1"></i>simposiotuc@face.unt.edu.ar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top py-3">
     <div class="container">
@@ -289,6 +341,183 @@
     </div>
   </section>
 
+  <!-- COMITÉ -->
+  <section class="section bg-white border-top">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-12">
+          <h2 class="section-title mb-3">Comité Organizador</h2>
+          <p class="lead text-muted">Equipo de trabajo que coordina y ejecuta el XL Simposio Nacional</p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Comité Organizador -->
+        <div class="col-lg-3 col-md-6">
+          <div class="p-4 bg-light rounded-4 shadow-soft h-100">
+            <div class="text-center mb-3">
+              <i class="bi bi-people-fill text-primary display-5"></i>
+            </div>
+            <h4 class="h5 fw-bold text-primary mb-3 text-center">Comité Organizador</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <strong class="text-dark">Presidente:</strong><br>
+                <span class="text-muted">Cr. Ricardo Lorenzo</span>
+              </li>
+              <li class="mb-2">
+                <strong class="text-dark">Vicepresidente:</strong><br>
+                <span class="text-muted">Esp. Gabriela Sánchez</span>
+              </li>
+              <li class="mb-2">
+                <strong class="text-dark">Secretario:</strong><br>
+                <span class="text-muted">Cra. Mabel Cabrera</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Comité Ejecutivo -->
+        <div class="col-lg-3 col-md-6">
+          <div class="p-4 bg-light rounded-4 shadow-soft h-100">
+            <div class="text-center mb-3">
+              <i class="bi bi-gear-fill text-success display-5"></i>
+            </div>
+            <h4 class="h5 fw-bold text-success mb-3 text-center">Comité Ejecutivo</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <strong class="text-dark">Presidente:</strong><br>
+                <span class="text-muted">Esp. Gabriela Sánchez</span>
+              </li>
+              <li class="mb-2">
+                <strong class="text-dark">Vicepresidente:</strong><br>
+                <span class="text-muted">Cra. Nora Liz Rabini</span>
+              </li>
+              <li class="mb-2">
+                <strong class="text-dark">Secretarios:</strong><br>
+                <span class="text-muted">Cr. Marcelo Albaca<br>Cr. Marcelo Isa</span>
+              </li>
+              <li class="mb-2">
+                <strong class="text-dark">Tesorero:</strong><br>
+                <span class="text-muted">Cr. Sergio Méndez</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Comité Académico -->
+        <div class="col-lg-3 col-md-6">
+          <div class="p-4 bg-light rounded-4 shadow-soft h-100">
+            <div class="text-center mb-3">
+              <i class="bi bi-mortarboard-fill text-warning display-5"></i>
+            </div>
+            <h4 class="h4 fw-bold text-warning mb-3 text-center">Comité Académico</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <span class="text-muted">Dra. Lea Cortés de Trejo</span>
+              </li>
+              <li class="mb-2">
+                <span class="text-muted">Dr. Luis Montenegro</span>
+              </li>
+              <li class="mb-2">
+                <span class="text-muted">Dr. José María Las Heras</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Vocales -->
+        <div class="col-lg-3 col-md-6">
+          <div class="p-4 bg-light rounded-4 shadow-soft h-100">
+            <div class="text-center mb-3">
+              <i class="bi bi-person-badge-fill text-info display-5"></i>
+            </div>
+            <h4 class="h5 fw-bold text-info mb-3 text-center">Vocales</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <strong class="text-dark">Ayudante Cátedra:</strong><br>
+                <span class="text-muted">Constanza Rubis</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPONSORS -->
+  <section class="section bg-white border-top">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-12">
+          <h2 class="section-title mb-3">Sponsors</h2>
+          <p class="lead text-muted">Agradecemos el apoyo de nuestras instituciones y empresas patrocinadoras</p>
+        </div>
+      </div>
+      
+      <div class="row g-4 justify-content-center">
+        <!-- Sponsor Platino - FACE -->
+        <div class="col-md-4 col-lg-3">
+          <div class="text-center">
+            <div class="mb-3">
+              <img src="imagenes/sponsor_1_face.jpg" alt="Sponsor FACE" class="img-fluid rounded-3 shadow-soft" style="max-height: 120px; object-fit: contain;">
+            </div>
+            <span class="badge bg-primary px-3 py-2 fw-bold">
+              <i class="bi bi-award-fill me-1"></i>PLATINO
+            </span>
+          </div>
+        </div>
+        
+        <!-- Sponsor Platino - UNT -->
+        <div class="col-md-4 col-lg-3">
+          <div class="text-center">
+            <div class="mb-3">
+              <img src="imagenes/sponsor_1_unt.jpg" alt="Sponsor UNT" class="img-fluid rounded-3 shadow-soft" style="max-height: 120px; object-fit: contain;">
+            </div>
+            <span class="badge bg-primary px-3 py-2 fw-bold">
+              <i class="bi bi-award-fill me-1"></i>PLATINO
+            </span>
+          </div>
+        </div>
+        
+        <!-- Sponsor Oro - SMT -->
+        <div class="col-md-4 col-lg-3">
+          <div class="text-center">
+            <div class="mb-3">
+              <img src="imagenes/sponsor_2_smt.jpg" alt="Sponsor SMT" class="img-fluid rounded-3 shadow-soft" style="max-height: 120px; object-fit: contain;">
+            </div>
+            <span class="badge bg-warning text-dark px-3 py-2 fw-bold">
+              <i class="bi bi-award-fill me-1"></i>ORO
+            </span>
+          </div>
+        </div>
+        
+        <!-- Sponsor Plata - Cuidarte -->
+        <div class="col-md-4 col-lg-3">
+          <div class="text-center">
+            <div class="mb-3">
+              <img src="imagenes/sponsor_3_cuidarte.jpg" alt="Sponsor Cuidarte" class="img-fluid rounded-3 shadow-soft" style="max-height: 120px; object-fit: contain;">
+            </div>
+            <span class="badge bg-secondary px-3 py-2 fw-bold">
+              <i class="bi bi-award-fill me-1"></i>PLATA
+            </span>
+          </div>
+        </div>
+        
+        <!-- Sponsor Plata - JMV -->
+        <div class="col-md-4 col-lg-3">
+          <div class="text-center">
+            <div class="mb-3">
+              <img src="imagenes/sponsor_3_jmv.jpg" alt="Sponsor JMV" class="img-fluid rounded-3 shadow-soft" style="max-height: 120px; object-fit: contain;">
+            </div>
+            <span class="badge bg-secondary px-3 py-2 fw-bold">
+              <i class="bi bi-award-fill me-1"></i>PLATA
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PROGRAMA -->
   <section id="programa" class="section">
     <div class="container">
@@ -339,6 +568,8 @@
       </div>
     </div>
   </section>
+
+ 
 
   <!-- INSCRIPCION -->
   <section id="inscripcion" class="section bg-light border-top">
@@ -456,12 +687,12 @@
 
 
          <!-- DOCUMENTOS -->
-     <section id="documentos" class="section">
+     <section id="documentos" class="section" style="background: linear-gradient(135deg, #465f86 0%, #5a7a9a 50%, #6b8ba8 100%);">
          <div class="container">
            <div class="row g-5">
              <div class="col-12 text-center mb-4">
-               <h2 class="section-title mb-3">Circulares y Documentos</h2>
-               <p class="lead text-muted">Descargá la información oficial del Simposio</p>
+               <h2 class="section-title mb-3 text-white">Circulares y Documentos</h2>
+               <p class="lead text-white-50">Descargá la información oficial del Simposio</p>
              </div>
              <div class="col-lg-4">
                <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center position-relative overflow-hidden">
@@ -541,10 +772,13 @@
       <div class="row g-4">
         <!-- Cada tarjeta puede ajustarse según disponibilidad -->
         <div class="col-md-6 col-lg-4">
-          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100 text-center">
+            <div class="text-center mb-3">
+              <img src="imagenes/hotel-amerian.jpg" alt="Hotel Amerian Tucumán" class="img-fluid rounded-3" style="max-height: 120px; object-fit: cover;">
+            </div>
             <h5 class="fw-bold mb-1">Amerian Tucumán</h5>
             <small class="d-block mb-2">Santiago del Estero 425 · +54 381 431-9441</small>
-            <ul class="mb-2">
+            <ul class="mb-2 list-unstyled">
               <li>Single/Doble: $120.552</li>
               <li>Suite Ejecutiva: $145.859,90</li>
             </ul>
@@ -552,42 +786,57 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100 text-center">
+            <div class="text-center mb-3">
+              <img src="imagenes/hotel-premier.jpg" alt="Hotel Premier" class="img-fluid rounded-3" style="max-height: 120px; object-fit: cover;">
+            </div>
             <h5 class="fw-bold mb-1">Hotel Premier</h5>
             <small class="d-block mb-2">Crisóstomo Álvarez 510 · +54 381 431-0382</small>
-            <ul class="mb-2"><li>Single: $58.320</li><li>Doble: $64.800</li></ul>
+            <ul class="mb-2 list-unstyled"><li>Single: $58.320</li><li>Doble: $64.800</li></ul>
             <small>Tarifa con desayuno.</small>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100 text-center">
+            <div class="text-center mb-3">
+              <img src="imagenes/hotel-carlos-v.jpg" alt="Hotel Carlos V" class="img-fluid rounded-3" style="max-height: 120px; object-fit: cover;">
+            </div>
             <h5 class="fw-bold mb-1">Hotel Carlos V</h5>
             <small class="d-block mb-2">25 de Mayo 330 · +54 381 431-1666</small>
-            <ul class="mb-2"><li>Single: $63.000</li><li>Doble: $70.000</li></ul>
+            <ul class="mb-2 list-unstyled"><li>Single: $63.000</li><li>Doble: $70.000</li></ul>
             <small>Tarifa con desayuno.</small>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100 text-center">
+            <div class="text-center mb-3">
+              <img src="imagenes/hotel-bicentenario.jpg" alt="Bicentenario Suites & Spa" class="img-fluid rounded-3" style="max-height: 120px; object-fit: cover;">
+            </div>
             <h5 class="fw-bold mb-1">Bicentenario Suites & Spa</h5>
             <small class="d-block mb-2">J. G. de las Heras 21 · 381 254-6282</small>
-            <ul class="mb-2"><li>Single: $90.800</li><li>Doble: $102.800</li></ul>
+            <ul class="mb-2 list-unstyled"><li>Single: $90.800</li><li>Doble: $102.800</li></ul>
             <small>Tarifa con desayuno.</small>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100 text-center">
+            <div class="text-center mb-3">
+              <img src="imagenes/hotel-hilton.jpg" alt="Hilton Garden Inn Tucumán" class="img-fluid rounded-3" style="max-height: 120px; object-fit: cover;">
+            </div>
             <h5 class="fw-bold mb-1">Hilton Garden Inn Tucumán</h5>
             <small class="d-block mb-2">Miguel Lillo 365 · +54 381 453-2000</small>
-            <ul class="mb-2"><li>Single: $125.000</li><li>Doble: $140.000</li></ul>
+            <ul class="mb-2 list-unstyled"><li>Single: $125.000</li><li>Doble: $140.000</li></ul>
             <small>Tarifa con desayuno.</small>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100">
+          <div class="hotel-card p-4 bg-white rounded-4 shadow-soft h-100 text-center">
+            <div class="text-center mb-3">
+              <img src="imagenes/hotel-francia.jpg" alt="Hotel Francia" class="img-fluid rounded-3" style="max-height: 120px; object-fit: cover;">
+            </div>
             <h5 class="fw-bold mb-1">Hotel Francia</h5>
             <small class="d-block mb-2">J. C. Álvarez 467 · +54 381 431-0781</small>
-            <ul class="mb-2"><li>Single: $60.300</li><li>Doble: $73.700</li><li>Triple: $85.600</li><li>Cuádruple: $99.800</li></ul>
+            <ul class="mb-2 list-unstyled"><li>Single: $60.300</li><li>Doble: $73.700</li><li>Triple: $85.600</li><li>Cuádruple: $99.800</li></ul>
             <small>Tarifa con desayuno.</small>
           </div>
         </div>
@@ -640,13 +889,143 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="py-4 border-top">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-      <div>
-        <span class="text-muted">© <span id="year"></span> XL Simposio Nacional de Profesores Universitarios de Contabilidad Pública</span>
+
+
+ <!-- ORGANIZADORES -->
+ <section class="section bg-light border-top">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="section-title mb-3">Organizadores</h2>
+        <p class="lead text-muted">Instituciones que hacen posible este importante evento académico</p>
       </div>
-      <div class="small text-muted">Organiza: Cátedra de Administración y Contabilidad Pública · FCE-UNT · AAPUCP "Dr. Juan Bayetto"</div>
+    </div>
+    
+    <div class="row g-4 justify-content-center align-items-center">
+      <!-- Organizador Cátedra -->
+      <div class="col-md-4">
+        <div class="text-center p-4">
+          <div class="mb-3">
+            <img src="imagenes/organizador_catedra.jpg" alt="Cátedra de Administración y Contabilidad Pública" class="img-fluid rounded-3 shadow-soft" style="max-height: 150px; object-fit: contain;">
+          </div>
+          <h5 class="fw-bold text-primary">Cátedra de Administración y Contabilidad Pública</h5>
+          <p class="text-muted mb-0">Responsable académica del evento</p>
+        </div>
+      </div>
+      
+      <!-- Organizador FACE -->
+      <div class="col-md-4">
+        <div class="text-center p-4">
+          <div class="mb-3">
+            <img src="imagenes/organizador_face.jpg" alt="Facultad de Ciencias Económicas" class="img-fluid rounded-3 shadow-soft" style="max-height: 150px; object-fit: contain;">
+          </div>
+          <h5 class="fw-bold text-primary">Facultad de Ciencias Económicas</h5>
+          <p class="text-muted mb-0">Universidad Nacional de Tucumán</p>
+        </div>
+      </div>
+      
+      <!-- Organizador APUCP -->
+      <div class="col-md-4">
+        <div class="text-center p-4">
+          <div class="mb-3">
+            <img src="imagenes/organizador_apucp.jpg" alt="APUCP Dr. Juan Bayetto" class="img-fluid rounded-3 shadow-soft" style="max-height: 150px; object-fit: contain;">
+          </div>
+          <h5 class="fw-bold text-primary">APUCP "Dr. Juan Bayetto"</h5>
+          <p class="text-muted mb-0">Asociación Argentina de Profesores Universitarios de Contabilidad Pública</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="py-5 border-top" style="background: linear-gradient(135deg, #465f86 0%, #5a7a9a 50%, #6b8ba8 100%);">
+    <div class="container">
+      <!-- Información principal del footer -->
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4">
+          <h5 class="text-white fw-bold mb-3">XL Simposio Nacional</h5>
+          <p class="text-white-50 mb-3">El evento académico más importante de contabilidad pública en Argentina, reuniendo a profesores universitarios de todo el país para compartir experiencias y conocimientos.</p>
+          <div class="d-flex gap-2">
+            <a href="mailto:simposiotuc@face.unt.edu.ar" class="btn btn-outline-light btn-sm">
+              <i class="bi bi-envelope me-1"></i>Contacto
+            </a>
+            <a href="#inscripcion" class="btn btn-outline-light btn-sm">
+              <i class="bi bi-person-plus me-1"></i>Inscribirse
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <h5 class="text-white fw-bold mb-3">Organización</h5>
+          <ul class="list-unstyled text-white-50">
+            <li class="mb-2">
+              <i class="bi bi-building me-2"></i>
+              <strong>Cátedra de Administración y Contabilidad Pública</strong>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-mortarboard me-2"></i>
+              <strong>Facultad de Ciencias Económicas</strong><br>
+              <small>Universidad Nacional de Tucumán</small>
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-people me-2"></i>
+              <strong>APUCP</strong><br>
+              <small>Asociación Argentina de Profesores Universitarios de Contabilidad Pública</small>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4">
+          <h5 class="text-white fw-bold mb-3">Links Recomendados</h5>
+          <div class="row g-2">
+            <div class="col-12">
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="https://face.unt.edu.ar" target="_blank" class="text-white-50 text-decoration-none hover-white">
+                    <i class="bi bi-link-45deg me-1"></i>FACE-UNT
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="https://unt.edu.ar" target="_blank" class="text-white-50 text-decoration-none hover-white">
+                    <i class="bi bi-link-45deg me-1"></i>UNT
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="https://apucp.com.ar/" target="_blank" class="text-white-50 text-decoration-none hover-white">
+                    <i class="bi bi-link-45deg me-1"></i>APUCP
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Línea separadora -->
+      <hr class="border-white-50 my-4">
+      
+      <!-- Información de contacto y copyright -->
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="d-flex flex-column flex-md-row gap-3 text-white-50 small">
+            <span>
+              <i class="bi bi-geo-alt me-1"></i>
+              Av. Independencia 1900, San Miguel de Tucumán
+            </span>
+            <span>
+              <i class="bi bi-calendar me-1"></i>
+              3-5 de septiembre, 2025
+            </span>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="text-white mb-1">© <span id="year"></span> XL Simposio Nacional de Profesores Universitarios de Contabilidad Pública</p>
+          <p class="text-white-50 small mb-0">Todos los derechos reservados</p>
+        </div>
+      </div>
     </div>
   </footer>
 
