@@ -326,9 +326,30 @@
           <li class="nav-item"><a class="nav-link" href="#inscripcion">Inscripción</a></li>
           <li class="nav-item"><a class="nav-link" href="#trabajos">Trabajos</a></li>
           <li class="nav-item"><a class="nav-link" href="#temario">Temario</a></li>
-          <li class="nav-item"><a class="nav-link" href="#documentos">Circulares</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sede">Sede</a></li>
-          <li class="nav-item"><a class="nav-link" href="#alojamiento">Alojamiento</a></li>
+          <li class="nav-item"><a class="nav-link" href="#comite">Comité</a></li>
+          
+          <!-- Menú desplegable para Documentos y Declaraciones -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documentos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#documentos">Circulares</a></li>
+              <li><a class="dropdown-item" href="#declaraciones">Declaraciones</a></li>
+            </ul>
+          </li>
+          
+          <!-- Menú desplegable para Información -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Información
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#sede">Sede</a></li>
+              <li><a class="dropdown-item" href="#alojamiento">Alojamiento</a></li>
+            </ul>
+          </li>
+          
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
@@ -462,7 +483,7 @@
   </section>
 
   <!-- COMITÉ -->
-  <section class="section bg-white border-top">
+  <section id="comite" class="section bg-white border-top">
     <div class="container">
       <div class="row text-center mb-5">
         <div class="col-12">
@@ -567,16 +588,63 @@
             </ul>
           </div>
         </div>
+        
+      
+
+
+        <iframe width="100%" height="550" src="https://www.youtube.com/embed/9qftvmLH3C4?si=oPsuZs2ijYTvT_cg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+  </section>
+
+  <!-- DECLARACIONES DE INTERÉS ACADÉMICO -->
+  <section id="declaraciones" class="section bg-light border-top">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-12">
+          <h2 class="section-title mb-3">Declaraciones de Interés Académico</h2>
+          <p class="lead text-muted">Documentos oficiales de reconocimiento académico del Simposio</p>
+        </div>
+      </div>
+      
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="text-center p-4 bg-white rounded-4 shadow-soft h-100 sponsor-card">
+            <div class="mb-3">
+              <img src="imagenes/declaracion-uns.jpg" alt="UNS" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
+            </div>
+            <h5 class="fw-bold text-primary mb-2">Universidad Nacional del Sur</h5>
+            <div class="d-grid">
+              <a class="btn btn-outline-primary" href="declaraciones/CDCA-328-2025 Auspicio Simposio Contabilidad Pública.pdf" download target="_blank">
+                <i class="bi bi-download me-2"></i>Descargar PDF
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="text-center p-4 bg-white rounded-4 shadow-soft h-100 sponsor-card">
+            <div class="mb-3">
+              <img src="imagenes/declaracion-faea.jpg" alt="FAEA" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
+            </div>
+            <h5 class="fw-bold text-primary mb-2">Facultad de Economía y Administración</h5>
+            <div class="d-grid">
+              <a class="btn btn-outline-primary" href="declaraciones/383 AVAL ACADEMICO SIMPOSIO PROF CONTABILIDAD-F.pdf" download target="_blank">
+                <i class="bi bi-download me-2"></i>Descargar PDF
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- SPONSORS -->
-  <section class="section bg-white border-top">
+  <section id="sponsors" class="section bg-white border-top">
     <div class="container">
       <div class="row text-center mb-5">
         <div class="col-12">
-          <h2 class="section-title mb-3">Sponsors</h2>
+          <h2 class="section-title mb-3">Auspiciantes y Sponsors</h2>
           <p class="lead text-muted">Agradecemos el apoyo de nuestras instituciones y empresas patrocinadoras</p>
         </div>
       </div>
@@ -609,8 +677,29 @@
             <div class="mb-3">
               <img src="imagenes/sponsor_2_smt.jpg" alt="Sponsor SMT" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
             </div>
-            <h5 class="fw-bold text-success mb-2">SMT</h5>
-            <p class="text-muted small mb-0">Empresa patrocinadora</p>
+            <h5 class="fw-bold text-primary mb-2">SMT</h5>
+            <p class="text-muted small mb-0">Institución patrocinadora</p>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
+            <div class="mb-3">
+              <img src="imagenes/sponsor_2_legislatura.jpg" alt="Sponsor Legislatura" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
+            </div>
+            <h5 class="fw-bold text-primary mb-2">Honorable Legislatura Tucumán</h5>
+            <p class="text-muted small mb-0">Institución patrocinadora</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
+            <div class="mb-3">
+              <img src="imagenes/sponsor_2_consejo.jpg" alt="Sponsor consejo" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
+            </div>
+            <h5 class="fw-bold text-primary mb-2">Honorable Concejo Deliberante</h5>
+            <p class="text-muted small mb-0">Institución patrocinadora</p>
           </div>
         </div>
 
@@ -620,41 +709,73 @@
             <div class="mb-3">
               <img src="imagenes/sponsor_2_bercovich.jpg" alt="Sponsor Bercovich" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
             </div>
-            <h5 class="fw-bold text-success mb-2">Grupo Bercovich</h5>
+            <h5 class="fw-bold text-primary mb-2">Grupo Bercovich</h5>
             <p class="text-muted small mb-0">Empresa patrocinadora</p>
           </div>
         </div>
         
         <!-- Tercera fila: sponsor_3 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-3">
           <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
             <div class="mb-3">
               <img src="imagenes/sponsor_3_cuidarte.jpg" alt="Sponsor Cuidarte" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
             </div>
-            <h5 class="fw-bold text-info mb-2">Cuidarte</h5>
+            <h5 class="fw-bold text-primary mb-2">Cuidarte</h5>
             <p class="text-muted small mb-0">Empresa patrocinadora</p>
           </div>
         </div>
         
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-3">
           <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
             <div class="mb-3">
               <img src="imagenes/sponsor_3_jmv.jpg" alt="Sponsor JMV" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
             </div>
-            <h5 class="fw-bold text-info mb-2">JMV</h5>
+            <h5 class="fw-bold text-primary mb-2">JMV</h5>
             <p class="text-muted small mb-0">Empresa patrocinadora</p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-3">
           <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
             <div class="mb-3">
               <img src="imagenes/sponsor_2_concilio.jpg" alt="Sponsor Concilio y Sarralde" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
             </div>
-            <h5 class="fw-bold text-info mb-2">Concilio & Sarralde</h5>
+            <h5 class="fw-bold text-primary mb-2">Concilio & Sarralde</h5>
             <p class="text-muted small mb-0">Empresa patrocinadora</p>
           </div>
         </div>
+
+
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
+            <div class="mb-3">
+              <img src="imagenes/sponsor_3_subway.jpg" alt="Sponsor Subway" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
+            </div>
+            <h5 class="fw-bold text-primary mb-2">Subway</h5>
+            <p class="text-muted small mb-0">Empresa patrocinadora</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
+            <div class="mb-3">
+              <img src="imagenes/sponsor_proycon.jpg" alt="Sponsor Proycon" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
+            </div>
+            <h5 class="fw-bold text-primary mb-2">Proycon SRL</h5>
+            <p class="text-muted small mb-0">Empresa patrocinadora</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-light rounded-4 shadow-soft h-100 sponsor-card">
+            <div class="mb-3">
+              <img src="imagenes/sponsor_api.jpg" alt="Sponsor API" class="img-fluid rounded-3" style="max-height: 140px; object-fit: contain;">
+            </div>
+            <h5 class="fw-bold text-primary mb-2">API & Asociados</h5>
+            <p class="text-muted small mb-0">Empresa patrocinadora</p>
+          </div>
+        </div>
+
 
         
 
@@ -838,62 +959,75 @@
 
 
 
-         <!-- DOCUMENTOS -->
+                  <!-- DOCUMENTOS -->
      <section id="documentos" class="section" style="background: linear-gradient(135deg, #465f86 0%, #5a7a9a 50%, #6b8ba8 100%);">
          <div class="container">
-           <div class="row g-5">
+           <div class="row g-4">
              <div class="col-12 text-center mb-4">
                <h2 class="section-title mb-3 text-white">Circulares y Documentos</h2>
                <p class="lead text-white-50">Descargá la información oficial del Simposio</p>
              </div>
-             <div class="col-lg-4">
+             
+             <!-- Circular 1 -->
+             <div class="col-md-6 col-lg-3">
                <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center position-relative overflow-hidden">
-
                  <div class="mb-3">
-                   <i class="bi bi-file-earmark-pdf text-danger display-4"></i>
+                   <i class="bi bi-file-earmark-pdf text-primary display-4"></i>
                  </div>
                  <h5 class="fw-bold mb-2">Circular Nº 1</h5>
-                 
                  <div class="d-grid">
-                   <a class="btn btn-outline-danger" href="circulares/Circular 1 Simposio XL Tucumán.pdf" download target="_blank">
+                   <a class="btn btn-outline-primary" href="circulares/Circular 1 Simposio XL Tucumán.pdf" download target="_blank">
                      <i class="bi bi-download me-2"></i>Descargar PDF
                    </a>
                  </div>
                </div>
              </div>
-             <div class="col-lg-4">
+             
+             <!-- Circular 2 -->
+             <div class="col-md-6 col-lg-3">
                <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center position-relative overflow-hidden">
-
                  <div class="mb-3">
-                   <i class="bi bi-file-earmark-pdf text-warning display-4"></i>
+                   <i class="bi bi-file-earmark-pdf text-primary display-4"></i>
                  </div>
                  <h5 class="fw-bold mb-2">Circular Nº 2</h5>
-                 
                  <div class="d-grid">
-                   <a class="btn btn-outline-warning" href="circulares/Circular 2 Simposio XL Tucumán.pdf" download target="_blank">
+                   <a class="btn btn-outline-primary" href="circulares/Circular 2 Simposio XL Tucumán.pdf" download target="_blank">
                      <i class="bi bi-download me-2"></i>Descargar PDF
                    </a>
                  </div>
                </div>
              </div>
-             <div class="col-lg-4">
+             
+             <!-- Circular 3 -->
+             <div class="col-md-6 col-lg-3">
                <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center position-relative overflow-hidden">
-
                  <div class="mb-3">
-                   <i class="bi bi-file-earmark-pdf text-info display-4"></i>
+                   <i class="bi bi-file-earmark-pdf text-primary display-4"></i>
                  </div>
                  <h5 class="fw-bold mb-2">Circular Nº 3</h5>
-                 
                  <div class="d-grid">
-                   <a class="btn btn-outline-info" href="circulares/Circular 3 Simposio XL Tucumán.pdf" download target="_blank">
+                   <a class="btn btn-outline-primary" href="circulares/Circular 3 Simposio XL Tucumán.pdf" download target="_blank">
+                     <i class="bi bi-download me-2"></i>Descargar PDF
+                   </a>
+                 </div>
+               </div>
+             </div>
+             
+             <!-- Circular 4 -->
+             <div class="col-md-6 col-lg-3">
+               <div class="p-4 bg-white rounded-4 shadow-soft h-100 text-center position-relative overflow-hidden">
+                 <div class="mb-3">
+                   <i class="bi bi-file-earmark-pdf text-primary display-4"></i>
+                 </div>
+                 <h5 class="fw-bold mb-2">Circular Nº 4</h5>
+                 <div class="d-grid">
+                   <a class="btn btn-outline-primary" href="circulares/Circular 4 Simposio XL Tucumán.pdf" download target="_blank">
                      <i class="bi bi-download me-2"></i>Descargar PDF
                    </a>
                  </div>
                </div>
              </div>
            </div>
-           
-
          </div>
        </section>
 
@@ -1043,8 +1177,8 @@
 
 
 
- <!-- ORGANIZADORES -->
- <section class="section bg-light border-top">
+   <!-- ORGANIZADORES -->
+  <section id="organizadores" class="section bg-light border-top">
   <div class="container">
     <div class="row text-center mb-5">
       <div class="col-12">
